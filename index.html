@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with Numbers</title>
+    <link rel="stylesheet"href="https:///pyscript.net/releases/2025.2.2/core.css">
+    <script type="module"src=https:///pyscript.net/releases/2025.2.2/core.js></script>
+</head>
+<body>
+    <div class="div">
+        <h1>Simple Calc using forms and numbers</h1>
+        <p>Enter your selected two numbers and select an operation!</p>
+
+        <label for="num1">First Number</label>
+        <input type="number" id="num1">
+        <br><br>
+        <label for="num2">Second Number</label>
+        <input type="number" id="num2">
+        <br><br>
+        <label>Operation</label>
+        <select id="operation">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="x">x</option>
+            <option value="/">/</option>
+        </select>
+        <br> <br>
+        <button py-click="compute">CLICK ME FOR ANSWER NOW</button>
+    </div>
+    <div class="div" id="result">
+        LOADING LOADING IM A LOADER
+    </div>
+     <py-script src="main.py"></py-script>
+</body>
+</html>
